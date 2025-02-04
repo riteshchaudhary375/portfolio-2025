@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.container {
+  @apply max-w-5xl mx-auto;
+}
+
+.heading1 {
+  @apply text-5xl text-black font-medium;
+}
+
+.heading2 {
+  @apply text-3xl text-gray-800;
+}
+
+.heading3 {
+  @apply text-xl text-gray-800;
+}
+
+.paragraph {
+  @apply text-base text-gray-600;
+}

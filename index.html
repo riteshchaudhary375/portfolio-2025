@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="relative max-w-6xl mx-auto p-6 flex bg-white justify-between items-center"
+    >
+      <h1 class="heading2">
+        <a href="#"> Ritesh Chaudhary </a>
+      </h1>
+
+      <!-- Nav-Menu -->
+      <div id="nav-menu" class="hidden md:flex gap-8 heading3">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden cursor-pointer" onclick="handleMenu()">
+        <img
+          src="../assets/menu-svgrepo-com.svg"
+          alt="menu_button"
+          class="w-9 h-9"
+        />
+      </button>
+
+      <!-- Mobile Menu List -->
+      <div
+        id="nav-dialog"
+        class="absolute hidden md:hidden right-8 top-16 px-8 py-4 border border-gray-300 rounded-sm"
+      >
+        <!-- Mobile Menu Close -->
+        <!-- <button class="" onclick="handleMenu()">
+          <img
+            src="../assets/cross-svgrepo-com.svg"
+            alt="close_button"
+            class="w-10 h-10"
+          />
+        </button> -->
+
+        <!-- Mobile Menu List -->
+        <ul class="flex flex-col gap-4">
+          <li>
+            <a href="#about" class="">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <main class="mt-10 container px-6 md:mt-20 mb-20">
+      <div
+        class="flex flex-col justify-center md:flex-row items-center gap-16 sm:gap-10 lg:gap-24"
+      >
+        <img
+          src="./assets/ritesh_chaudhary.jpg"
+          alt="profile_image"
+          class="w-80 h-80 object-cover object-top rounded-full"
+        />
+
+        <div class="flex flex-col items-center gap-6">
+          <p class="heading3">Hello, I'm</p>
+          <p class="heading1 whitespace-nowrap">Ritesh Chaudhary</p>
+          <p class="heading2">MERN Stack Developer</p>
+          <div class="flex gap-4 mt-6">
+            <button
+              class="border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+            >
+              <a href="./assets/file.txt" download> Download CV </a>
+            </button>
+            <button
+              class="border bg-gray-700 text-white px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-800"
+            >
+              <a href="#contact"> Contact Info </a>
+            </button>
+          </div>
+          <div class="flex gap-4 mt-2">
+            <a
+              href="https://www.linkedin.com/in/riteshchaudhary7"
+              target="_blank"
+              title="LinkedIn"
+            >
+              <img
+                src="./assets/linkedin-rounded-svgrepo-com.svg"
+                alt="linkedin_link"
+                class="w-8 h-8 object-cover"
+              />
+            </a>
+            <a
+              href="https://github.com/riteshchaudhary375"
+              target="_blank"
+              title="GitHub"
+            >
+              <img
+                src="./assets/github-svgrepo-com.svg"
+                alt="github_link"
+                class="w-8 h-8 object-cover"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- About -->
+    <div
+      id="about"
+      class="container px-6 mt-32 md:my-40 flex flex-col gap-4 items-center"
+    >
+      <p class="paragraph">Get To Know More</p>
+      <h1 class="heading1 mb-10">About Me</h1>
+
+      <div class="flex flex-col lg:flex-row gap-6">
+        <div
+          class="border border-gray-300 p-6 rounded-sm text-center w-[350px] lg:w-[300px] flex flex-col gap-1"
+        >
+          <p class="heading2 mb-2">Skills</p>
+          <p class="paragraph">UI/UX Designing Interfaces</p>
+          <p class="paragraph">Web App Development</p>
+        </div>
+        <div
+          class="border border-gray-300 p-8 rounded-sm text-center w-[350px] lg:w-[300px]"
+        >
+          <p class="heading2 mb-2">Experience</p>
+          <p class="paragraph">1+ years</p>
+          <p class="paragraph">MERN Stack Development</p>
+        </div>
+        <div
+          class="border border-gray-300 p-6 rounded-sm text-center w-[350px] lg:w-[300px]"
+        >
+          <p class="heading2 mb-2">Education</p>
+          <p class="paragraph">BSc. (Hons) Computing</p>
+          <p class="paragraph">Leeds Beckett University, UK</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div
+      id="projects"
+      class="container px-6 mt-32 md:my-40 flex flex-col gap-4 items-center"
+    >
+      <p class="paragraph">Browse My Recent</p>
+      <h1 class="heading1 mb-10">Projects</h1>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-6 gap-y-12"
+      >
+        <!-- Project 1 - blogpoint. -->
+        <div
+          class="w-full h-[500px] border border-gray-300 rounded-sm overflow-hidden flex flex-col gap-2 items-center"
+        >
+          <img
+            src="./assets/project blogpoint.PNG"
+            alt="project_blogpiont"
+            class="w-full h-[70%] object-cover object-top border-b border-gray-300"
+          />
+          <!--     <p class="heading2 mb-2 mt-2">
+            Project <span class="font-medium">blogpoint.</span>
+          </p> -->
+          <p class="heading2 mb-2 mt-4 font-medium">blogpoint.</p>
+          <div class="flex gap-4 mt-2">
+            <a
+              href="https://github.com/riteshchaudhary375/BlogPoint"
+              target="_blank"
+            >
+              <button
+                class="w-[100px] border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+              >
+                GitHub
+              </button>
+            </a>
+            <a href="https://blogpoint-yw3m.onrender.com/" target="_blank">
+              <button
+                class="w-[100px] border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+              >
+                Live
+              </button>
+            </a>
+          </div>
+          <!--        <button
+            class="mt-1 whitespace-nowrap border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+          >
+            Sample Video
+          </button> -->
+        </div>
+
+        <!-- Project 2 MERN Auth -->
+        <div
+          class="w-full h-[500px] border border-gray-300 rounded-sm overflow-hidden flex flex-col gap-2 items-center"
+        >
+          <img
+            src="./assets/mern auth.PNG"
+            alt="project_mern_auth"
+            class="w-full h-[70%] object-cover object-top border-b border-gray-300"
+          />
+          <p class="heading2 mb-2 mt-4 font-medium">MERN Auth App</p>
+          <div class="flex gap-4 mt-2">
+            <a
+              href="https://github.com/riteshchaudhary375/mern-auth-app"
+              target="_blank"
+            >
+              <button
+                class="w-[100px] border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+              >
+                GitHub
+              </button>
+            </a>
+            <a href="https://mern-auth-46dx.onrender.com/" target="_blank">
+              <button
+                class="w-[100px] border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+              >
+                Live
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -weather app -->
+        <div
+          class="w-full h-[500px] border border-gray-300 rounded-sm overflow-hidden flex flex-col gap-2 items-center"
+        >
+          <img
+            src="./assets/project wealther app.PNG"
+            alt="project_weather_app"
+            class="w-full h-[70%] object-cover object-top border-b border-gray-300"
+          />
+          <p class="heading2 mb-2 mt-4 font-medium">Weather App</p>
+          <div class="flex gap-4 mt-2">
+            <a
+              href="https://github.com/riteshchaudhary375/weather-app?tab=readme-ov-file"
+              target="_blank"
+            >
+              <button
+                class="w-[100px] border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+              >
+                GitHub
+              </button>
+            </a>
+            <a href="https://weather-app-3qm6.onrender.com/" target="_blank">
+              <button
+                class="w-[100px] border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+              >
+                Live
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 - Calculator App -->
+        <div
+          class="w-full h-[500px] border border-gray-300 rounded-sm overflow-hidden flex flex-col gap-2 items-center"
+        >
+          <img
+            src="./assets/project calculator.PNG"
+            alt="project_calculator_app"
+            class="w-full h-[70%] object-cover object-top border-b border-gray-300"
+          />
+          <p class="heading2 mb-2 mt-4 font-medium">Calculator App</p>
+          <div class="flex gap-4 mt-2">
+            <a
+              href="https://github.com/riteshchaudhary375/calculator"
+              target="_blank"
+            >
+              <button
+                class="w-[100px] border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+              >
+                GitHub
+              </button>
+            </a>
+            <a href="https://calculator-ye9m.onrender.com/" target="_blank">
+              <button
+                class="w-[100px] border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+              >
+                Live
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5 - Responsive Layout -->
+        <div
+          class="w-full h-[500px] border border-gray-300 rounded-sm overflow-hidden flex flex-col gap-2 items-center"
+        >
+          <img
+            src="./assets/responsive layout.PNG"
+            alt="project_responsive_website"
+            class="w-full h-[70%] object-cover object-top border-b border-gray-300"
+          />
+          <p class="heading2 mb-2 mt-4 font-medium">Responsive Layout</p>
+          <div class="flex gap-4 mt-2">
+            <a
+              href="https://github.com/riteshchaudhary375/layout"
+              target="_blank"
+            >
+              <button
+                class="w-[100px] border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+              >
+                GitHub
+              </button>
+            </a>
+            <a
+              href="https://riteshchaudhary375.github.io/layout/index.html"
+              target="_blank"
+            >
+              <button
+                class="w-[100px] border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+              >
+                Live
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6 - Travel Agency Website -->
+        <div
+          class="w-full h-[500px] border border-gray-300 rounded-sm overflow-hidden flex flex-col gap-2 items-center"
+        >
+          <img
+            src="./assets/travel agency website.PNG"
+            alt="project_travel_website"
+            class="w-full h-[70%] object-cover object-top border-b border-gray-300"
+          />
+          <p class="heading2 mb-2 mt-4 font-medium">Travel Agency</p>
+          <div class="flex gap-4 mt-2">
+            <a
+              href="https://github.com/riteshchaudhary375/travel-agency"
+              target="_blank"
+            >
+              <button
+                class="w-[100px] border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+              >
+                GitHub
+              </button>
+            </a>
+            <a
+              href="https://riteshchaudhary375.github.io/travel-agency/#"
+              target="_blank"
+            >
+              <button
+                class="w-[100px] border border-gray-700 px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-700 hover:text-white"
+              >
+                Live
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div
+      id="contact"
+      class="container px-6 my-32 md:my-40 flex flex-col gap-6 items-center"
+    >
+      <p class="paragraph">Get In touch</p>
+      <h1 class="heading1 mb-10">Contact Me</h1>
+
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="max-w-xl flex flex-col gap-5 border border-gray-300 w-full p-4"
+      >
+        <!-- Replace with your Access Key -->
+        <input
+          type="hidden"
+          name="access_key"
+          value="b1be0f34-b88d-4f10-b8fc-b96e183bcac0"
+        />
+
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+        <div class="flex flex-col gap-2">
+          <label for="name" class="paragraph w-fit cursor-pointer"
+            >Full Name: <span class="text-red-600">*</span></label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="your full name"
+            class="border border-gray-400 outline-gray-500 px-2.5 py-1.5 rounded-sm"
+            required
+          />
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label for="email" class="paragraph w-fit cursor-pointer"
+            >Email: <span class="text-red-600">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your email"
+            class="border border-gray-400 outline-gray-500 px-2.5 py-1.5 rounded-sm"
+            required
+          />
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label for="contact" class="paragraph w-fit cursor-pointer"
+            >Contact:</label
+          >
+          <input
+            type="text"
+            id="contact"
+            name="contact"
+            placeholder="your contact number"
+            class="border border-gray-400 outline-gray-500 px-2.5 py-1.5 rounded-sm"
+          />
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label for="message" class="paragraph w-fit cursor-pointer"
+            >Message: <span class="text-red-600">*</span></label
+          >
+          <textarea
+            name="message"
+            id="message"
+            rows="6"
+            placeholder="your message"
+            class="border border-gray-400 outline-gray-500 px-2.5 py-1.5 rounded-sm resize-none"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Honeypot Spam Protection -->
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+
+        <!-- Custom Confirmation / Success Page -->
+        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+        <div class="text-center mt-2">
+          <button
+            type="submit"
+            class="border bg-gray-700 text-white px-6 py-2 rounded-sm cursor-pointer hover:bg-gray-800"
+          >
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container flex flex-col gap-6 mb-6 -mt-8">
+      <div class="heading2 flex gap-8 items-center justify-center">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
+      <div class="text-center">
+        <p class="paragraph">
+          Copyright © 2025 |
+          <a href="#" class="hover:underline">Ritesh Chaudhary</a> | All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
